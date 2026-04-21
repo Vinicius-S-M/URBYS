@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@root{
+    --btn-hero1: rgba(255, 255, 255, 0.75);
+    --btn-hero2: rgba(129,129,129,0.9);
+    --text-hero: rgba(0,0,0,0.75);
+    --background-secs: #E4F1E1;
+    --texts-secs: #1B4332;
+    --btns-secs: #74C69D;
+    --icons-secs: #081C15;
+    --bg-secs: rgba(8,28,21,0.1);
+    --footer-bg: #081C15;
+    --bottom-footer: #002A17
+}
+@font-face {
+    font-family: "Clash";
+    src: url(assets/fonts/ClashDisplay-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Clash";
+    src: url(assets/fonts/ClashDisplay-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Clash";
+    src: url(assets/fonts/ClashDisplay-Regular.ttf);
+    font-weight: 400;
+}
