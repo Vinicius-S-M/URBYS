@@ -32,7 +32,10 @@
         </header>
         <main>
             <section class="hero">
-                <h3>Uma plataforma colaborativa para denunciar problemas
+                <div class="bg">
+                    <img src="assets/hero/background.webp" alt="background"> <!-- provisorio-->
+                </div>
+                <h3 class="first-sub">Uma plataforma colaborativa para denunciar problemas
                     ambientais urbanos em tempo real.</h3>
                 <div class="buttons">
                     <a href="#" class="btn-primary">Criar Report <img
@@ -60,178 +63,186 @@
                     participando da mudança que quer ver na sua rua.
                 </h2>
             </section>
-            <section class="sec2">
-                <div class="bar-progress">
-                    <div class="step1">
-                        <img src="assets/sec-steps/step1/camera.svg"
-                            alt="icone de câmera">
-                        <h3>01</h3>
-                    </div>
-                    <div class="line-background-1">
-                        <div class="line-progress" id="progress-lin-2"></div>
-                    </div>
-                    <div class="step2">
-                        <img src="assets/sec-steps//step2/cloud-upload.svg"
-                            alt="icone de upload">
-                        <h3>02</h3>
-                    </div>
-                    <div class="line-background-2">
-                        <div class="line-progress" id="progress-line-2"></div>
-                    </div>
-                    <div class="step3">
-                        <img src="assets/sec-steps/chart-line.svg"
-                            alt="icone do grafico">
-                        <h3>03</h3>
-                    </div>
-                </div>
-                <div class="img-progress">
-                    <div class="step1">
-                        <img src="assets/sec-steps/step1/icon-camera-1.webp"
-                            alt="imagem da camera">
-                    </div>
-                    <div class="step2">
-                        <img src="assets/sec-steps//step2/icone-upload-1.webp"
-                            alt="imagem do upload">
-                    </div>
-                    <div class="step3">
-                        <img src="assets/sec-steps//step3/icon-grafico-1.webp"
-                            alt="imagem do grafico">
-                    </div>
-                </div>
-                <div class="content-steps">
-                    <div class="step1">
-                        <h3>Registre</h3>
-                        <p>Capture a imagem do problema ambiental encontrado ou
-                            forneça uma descrição minuciosa e completa de como e
-                            onde a ocorrência se manifesta.</p>
-                        <div class="btn-icons">
-                            <a href="#">Iniciar <img
-                                    src="assets/hero/Icon-button-1.svg"
-                                    alt="Botão iniciar"></a>
-                            <div class="icons">
-                                <img src="assets/sec-steps/step1/fire-icon.svg"
-                                    alt="Ícone de fogo">
-                                <img src="assets/sec-steps/step1/tree-icon.svg"
-                                    alt="Ícone de árvore">
-                                <img src="assets/sec-steps/step1/trash-icon.svg"
-                                    alt="Ícone de lixo">
-                                <img src="assets/sec-steps/step1/truck-icon.svg"
-                                    alt="Ícone de caminhão">
+            
+            </div>        
+            <section class="sec-step" id="step-registre">
+                <div class="steps-wrapper">
+                    <span class="background-text-fixed">ETAPAS</span>
+                    <aside class="side-navigation">
+                        <div class="nav-step active" id="nav-01">
+                            <div class="icon-and-line">
+                                <div class="step-icon"><img src="assets/sec-steps/step1/camera.svg" alt="câmera"></div>
+                                <div class="step-line"></div>
+                            </div>
+                            <div class="step-number">01</div>
+                        </div>
+
+                        <div class="nav-step" id="nav-02">
+                            <div class="icon-and-line">
+                                <div class="step-icon"><img src="assets/sec-steps/step2/cloud-upload.svg" alt="upload"></div>
+                                <div class="step-line"></div>
+                            </div>
+                            <div class="step-number">02</div>
+                        </div>
+
+                        <div class="nav-step" id="nav-03">
+                            <div class="icon-and-line">
+                                <div class="step-icon"><img src="assets/sec-steps/step3/chart-line.svg" alt="gráfico"></div>
+                            </div>
+                            <div class="step-number">03</div>
+                        </div>
+                    </aside>
+                    <div class="main-content">
+                        <div class="img-progress">
+                            <img src="assets/sec-steps/step1/icon-camera-1.webp" alt="imagem da camera">
+                        </div>
+                        <div class="content-steps">
+                            <h3>Registre</h3>
+                            <p>Capture a imagem do problema ambiental encontrado ou forneça uma descrição minuciosa e completa de como e onde a ocorrência se manifesta.</p>
+                            <div class="btn-icons">
+                                <a href="#" class="btn-action">Iniciar <img src="assets/hero/Icon-button-1.svg" alt="Seta"></a>
+                                <div class="icons-grid">
+                                    <div class="icon">
+                                        <img src="assets/sec-steps/step1/fire-icon.svg" alt="fogo">
+                                    </div>
+                                    <div class="icon">
+                                        <img src="assets/sec-steps/step1/tree-icon.svg" alt="tree">
+                                    </div>
+                                    <div class="icon">
+                                        <img src="assets/sec-steps/step1/trash-icon.svg" alt="trash">
+                                    </div>
+                                    <div class="icon">
+                                        <img src="assets/sec-steps/step1/truck-icon.svg" alt="caminhão">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="step2">
+                </div>    
+            </section>
+
+            <section class="sec-step" id="step-publique">
+                
+                <div class="main-content">
+                    <div class="img-progress">
+                        <img src="assets/sec-steps/step2/icone-upload-1.webp" alt="imagem do upload">
+                    </div>
+                    <div class="content-steps">
                         <h3>Publique</h3>
-                        <p>Envie o seu registro através do nosso formulário e
-                            indique o local da ocorrência. Ao detalhar as
-                            informações e anexar sua evidência, você fornece os
-                            dados essenciais para que o problema seja catalogado
-                            e monitorado no mapa da nossa cidade.
-                        </p>
+                        <p>Envie o seu registro através do nosso formulário e indique o local da ocorrência. Ao detalhar as informações e anexar sua evidência, você fornece os dados essenciais.</p>
                         <div class="btn-icons">
-                            <a href="#">Enviar <img
-                                    src="assets/hero/Icon-button-1.svg"
-                                    alt="Botão iniciar"></a>
-                            <div class="icons">
-                                <img src="assets/sec-steps/step2/text-icons.svg"
-                                    alt="Ícone de texto">
-                                <img src="assets/sec-steps/step2/map-icon.svg"
-                                    alt="Ícone de mapa">
-                                <img src="assets/sec-steps/step2/image-icon.svg"
-                                    alt="Ícone de img">
-                                <img src="assets/sec-steps/step2/clip-icon.svg"
-                                    alt="Ícone de clip">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step3">
-                        <h3>Monitore</h3>
-                        <p>Monitore de perto o progresso do seu relato e
-                            visualize o impacto real da sua denúncia no dia a
-                            dia da comunidade.
-                            Na URBYS, você não apenas aponta o problema, mas
-                            acompanha a evolução das melhorias no ecossistema
-                            urbano que nos cerca.
-                        </p>
-                        <div class="btn-icons">
-                            <a href="#">Observar <img
-                                    src="assets/hero/Icon-button-1.svg"
-                                    alt="Botão iniciar"></a>
-                            <div class="icons">
-                                <img src="assets/sec-steps/step3/stats-icon.svg"
-                                    alt="Ícone de estatísticas">
-                                <img src="assets/sec-steps/step3/check-icon.svg"
-                                    alt="Ícone de check">
-                                <img src="assets/sec-steps/step3/eye-icon.svg"
-                                    alt="Ícone de olho">
-                                <img src="assets/sec-steps/step3/mark-icon.svg"
-                                    alt="Ícone de marcação">
+                            <a href="#" class="btn-action">Enviar <img src="assets/hero/Icon-button-1.svg" alt="Seta"></a>
+                            <div class="icons-grid">
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step2/text-icons.svg" alt="texto">
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step2/map-icon.svg" alt="mapa">
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step2/image-icon.svg" alt="imagem">
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step2/clip-icon.svg" alt="clipe">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h1 class="backgroud">
-                    ETAPAS
-                </h1>
+            </section>
+
+            <section class="sec-step" id="step-monitore">
+                
+                <div class="main-content">
+                    <div class="img-progress">
+                        <img src="assets/sec-steps/step3/icon-grafico-1.webp" alt="imagem do grafico">
+                    </div>
+                    <div class="content-steps">
+                        <h3>Monitore</h3>
+                        <p>Monitore de perto o progresso do seu relato e visualize o impacto real da sua denúncia no dia a dia da comunidade.</p>
+                        <div class="btn-icons">
+                            <a href="#" class="btn-action">Observar <img src="assets/hero/Icon-button-1.svg" alt="Seta"></a>
+                            <div class="icons-grid">
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step3/stats-icon.svg" alt="Estatísticas">
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step3/check-icon.svg" alt="Check">
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step3/eye-icon.svg" alt="Olho">
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/sec-steps/step3/mark-icon.svg" alt="Marca">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </section>
             <section class="sec4">
                 <div class="content">
-                    <div class="card1">
-                        <img src="assets/sec-impatc/paper-icon.svg"
-                            alt="icone reports">
-                        <h4>2000</h4>
-                        <p>Reports feitos</p>
-                    </div>
-                    <div class="card2">
-                        <img src="assets/sec-impatc/verify-icon.svg"
-                            alt="icone de verificação">
-                        <h4>65%</h4>
-                        <p>Resolvidos</p>
-                    </div>
-                    <div class="card3">
-                        <img src="assets/sec-impatc/corpation-icon.svg"
-                            alt="icone cidades">
-                        <h4>120</h4>
-                        <p>Cidades impactadas</p>
-                    </div>
+                    <div class="cards">
+                        <div class="card1">
+                            <div class="icon">    
+                                <img src="assets/sec-impatc/paper-icon.svg"alt="icone reports">
+                            </div>
+                            <h4>2000</h4>
+                            <p>Reports feitos</p>
+                        </div>
+                        <div class="card2">
+                            <div class="icon">
+                                <img src="assets/sec-impatc/verify-icon.svg" alt="icone de verificação">
+                            </div>
+                            <h4>65%</h4>
+                            <p>Resolvidos</p>
+                        </div>
+                        <div class="card3">
+                            <div class="icon">
+                                <img src="assets/sec-impatc/corpation-icon.svg" alt="icone cidades">
+                            </div>
+                            <h4>120</h4>
+                            <p>Cidades impactadas</p>
+                        </div>
+                    </div>    
                 </div>
                 <div class="words-animation">
                     <div class="action">
-                        <p>Atitude que transforma</p>
+                        <p class="light">Atitude que transforma</p>
                         <img src="assets/sec-impatc/action-icon.svg"
                             alt="Ícone de ação">
-                        <p>Atitude que transforma</p>
+                        <p class="dark">Atitude que transforma</p>
                     </div>
                     <div class="speak">
-                        <p>Sua voz tem poder</p>
+                        <p class="light">Sua voz tem poder</p>
                         <img class="people-1"
                             src="assets/sec-impatc/people-icon.svg" alt>
-                        <p>Sua voz tem poder</p>
+                        <p class="dark">Sua voz tem poder</p>
                         <img class="people-2"
-                            src="assets/sec-impatc/people-icon.svg" alt>
-                        <p>Sua voz tem poder</p>
+                            src="assets/sec-impatc/people-icon2.svg" alt>
+                        <p class="light">Sua voz tem poder</p>
 
                     </div>
                     <div class="join-URBYS">
-                        <p>Junte-se a URBYS</p>
+                        <p class="dark">Junte-se a URBYS</p>
                         <img src="assets/sec-impatc/logo-variant-1.svg" alt>
-                        <p>Junte-se a URBYS</p>
+                        <p class="light">Junte-se a URBYS</p>
                         <img src="assets/sec-impatc/logo-variant-2.svg" alt>
-                        <p>Junte-se a URBYS</p>
+                        <p class="dark">Junte-se a URBYS</p>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
             <div class="footer-content">
-                <h2>Pequenas ações hoje escrevem <br>
-                    <span>a história do nosso ambiente amanhã</span>
-                </h2>
+                <h2>Pequenas ações hoje escrevem</h2>
+                <span>a história do nosso ambiente amanhã</span>
                 <p>Sua cidade precisa do seu olhar. Una-se ao URBYS e lidere a
                     evolução urbana.</p>
                 <div class="button">
-                    <a href="#">Cadastrar <img
-                            src="assets/hero/Icon-button-1.svg" alt></a>
+                    <a  href="#">Cadastrar <img src="assets/hero/Icon-button-1.svg" alt></a>
                 </div>
             </div>
             <div class="bottom-content">
