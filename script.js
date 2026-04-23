@@ -26,7 +26,7 @@
         opacity: 1,
         duration: 0.1
     })
-    const split = new SplitText(".sec1 h2", {
+    const split = new SplitText(".transition .sec1 h2", {
 
         types: "chars",
         mask: "lines"
