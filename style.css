@@ -91,11 +91,20 @@ header{
         }
     }
 }
+.trasition{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+
+}
 .hero{
     
     
-    width: 100%;
-    height: 100vh;
+    
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,19 +209,39 @@ header{
 }
 .sec1{
 
-    background-color: var(--background-secs);
-    width: 100%;
-    height: 100vh;
+    
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0px 4vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
 
     h2{
         font-family: "Inter", sans-serif;
         font-size: 80px;
         font-weight: 400;
         color: var(--texts-secs);
+    }
+
+}
+.ret{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    pointer-events: none;
+
+    div{
+        background-color: var(--background-secs);
+        width: 100%;
+        transform: translateY(-100%);
     }
 
 }
