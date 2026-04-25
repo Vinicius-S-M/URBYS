@@ -41,7 +41,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: red;
+    
 }
 header{
 
@@ -51,12 +51,14 @@ header{
     padding: 0px 4vw;
     justify-content: space-between;
     position: absolute;
-
+    z-index: 99;
+    
     h1{
         font-family: "Google Sans Flex", sans-serif;
         font-size: 24px;
         font-weight: 800;
         color: var(--btn-hero1);
+        
     }
     .nav-links{
 
@@ -105,6 +107,7 @@ header{
     
     
     height: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +121,7 @@ header{
         z-index: -1;
         img{
             width: 100%;
-            height: 100%;
+            height: 100vh;
             object-fit: cover;
         }
     }
@@ -232,7 +235,7 @@ header{
 .ret{
 
     width: 100%;
-    height: 100%;
+    height: 110%;
     position: absolute;
     inset: 0;
     display: flex;
@@ -241,25 +244,9 @@ header{
     div{
         background-color: var(--background-secs);
         width: 100%;
-        transform: translateY(-100%);
+        transform: translateY(-120%);
     }
 
-}
-.background-text-fixed {
-    position: absolute;
-    bottom: -140px; 
-    left: 50%;
-    transform: translateX(-50%);
-    
-    font-family: "Montserrat", sans-serif; 
-    font-size: 450px;
-    font-weight: 700; 
-    
-    line-height: 0.5;
-    color: var(--bg-secs); 
-    z-index: 0; 
-    pointer-events: none; 
-    white-space: nowrap;
 }
 .steps-wrapper {
     
@@ -272,79 +259,7 @@ header{
     z-index: 1;
 }
 
-.side-navigation {
-    position: sticky;
-    top: 25vh;
-    width: 180px; 
-    flex-shrink: 0;
-    padding-left: 4vw;
-}
 
-.steps-content {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-}
-.nav-step {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    height: 180px; 
-}
-.icon-and-line {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 32px; 
-}
-
-
-.step-icon {
-    width: 32px;
-    height: 32px;
-    opacity: 0.3; 
-    transform: scale(0.8);
-    transition: all 0.5s ease;
-}
-
-
-.step-line {
-    width: 4px;
-    height: 0px; 
-    background-color: var(--texts-secs);
-    border-radius: 50px;
-    margin-top: 16px; 
-    transition: height 0.8s ease;
-}
-
-
-.step-number {
-    font-family: "Clash-Extralight", sans-serif;
-    font-size: 96px; 
-    font-weight: 200;
-    color: var(--icons-secs);
-    line-height: 80px; 
-    opacity: 0.2;
-    transition: all 0.5s ease;
-    margin-left: 24px;
-}
-
-/* --- ESTADO ATIVO (QUANDO A CLASSE .active É ADICIONADA) --- */
-.nav-step.active .step-icon {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.nav-step.active .step-line {
-    height: 100px; /* A linha cresce e liga até o próximo passo */
-}
-
-.nav-step.active .step-number {
-    opacity: 1;
-    color: var(--texts-secs);
-    font-weight: 400; /* Dá um leve destaque na espessura */
-}
 .sec-step{
 
     width: 100%;
@@ -367,12 +282,27 @@ header{
     }
     .img-progress{
         
+        
         margin-left: 72px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 1;
+
+        h3{
+
+            margin-right: 80px;
+            font-family: "Clash-Extralight", sans-serif;
+            font-size: 96px; 
+            color: var(--icons-secs);
+            line-height: 80px; 
+            opacity: 0.8;
+            transition: all 0.5s ease;
+            margin-left: 24px;
+            font-weight: 200;
+
+        }
         img{
             width: 100%;
             max-width: 671px;
