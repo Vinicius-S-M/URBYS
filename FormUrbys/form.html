@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Problema Urbano</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="logo">URBYS</div>
+        <div class="center">
+            <h1>SUSTENTABILIDADE PARA 
+                <span>TODOS</span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <main class="form">
+            <h1>Reporte seu problema aqui!</h1>
+            <p>Preencha o formulário abaixo para reportar um problema na sua cidade.</p>
+
+            <form class="report-form" id="reportForm">
+                <fieldset class="dados">
+                    <legend>Seus Dados</legend>
+
+                    <label class="input-form">
+                        <span class="icon">
+                            <img src="img/icone-perfil.png" alt="Perfil">
+                        </span>
+                        <input type="text" placeholder="Seu Nome" required>
+                    </label>
+
+                    <label class="input-form">
+                        <span class="icon">
+                            <img src="img/icone-email.png" alt="Email">
+                        </span>
+                        <input type="email" placeholder="Seu Email" required>
+                    </label>
+
+                    <label class="input-form">
+                        <span class="icon">
+                            <img src="img/icone-telefone.png" alt="Telefone">
+                        </span>
+                        <input 
+                            type="tel" 
+                            id="telefone" 
+                            placeholder="(99) 99999-9999" 
+                            maxlength="15"
+                            required
+                        >
+                    </label>
+
+                    <label class="select-form">
+                        <span class="label-text">Categoria do Problema</span>
+                        <select required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option>Infraestrutura urbana</option>
+                            <option>Limpeza e coleta de lixo</option>
+                            <option>Iluminação pública</option>
+                            <option>Áreas verdes</option>
+                            <option>Outros</option>
+                        </select>
+                    </label>
+
+                    <label class="textarea-form">
+                        <span class="label-text">Detalhamento</span>
+                        <textarea placeholder="Descreva o problema encontrado..." rows="4" required></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset class="fotos-form">
+                    <legend>Foto do Problema</legend>
+                    
+                    <div class="photo-upload" id="photoUpload">
+                        <img src="img/icone-enviar.png" class="camera-icon" alt="Camera">
+                        <button class="btn-add" type="button">+ Adicionar Foto</button>
+                        <span class="drag-text">ou arraste e solte aqui (máximo 4 imagens)</span>
+                        <input type="file" id="fileInput" accept="image/*" multiple>
+                    </div>
+                
+                    <!-- Container das previews -->
+                    <div class="image-preview-container" id="imagePreviewContainer">
+                        <div id="imagePreview"></div>
+                        <div class="limit-message" id="limitMessage">
+                            Limite de 4 imagens atingido! Remova uma imagem para adicionar uma nova.
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-submit">Enviar Reporte</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>URBYS - Sustentabilidade para todos</p>
+    </footer>
+
+    <script src="DragDrop.JS"></script>
+</body>
+</html>
