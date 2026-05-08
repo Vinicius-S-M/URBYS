@@ -32,7 +32,7 @@ A proposta do URBYS está diretamente alinhada aos **Objetivos de Desenvolviment
 
 * Carlos Eduardo
 * Erik Henrique dos Santos Barbosa
-* Isaque Luiz Silve
+* Isaque Luiz Silva
 * Maria Eduarda Rodrigues Martin
 * Mateus Citelli
 * Pedro Henrique Salvi
